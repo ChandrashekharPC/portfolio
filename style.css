@@ -1,9 +1,6 @@
-/* style.css
-  This file contains custom CSS rules that are not covered by Tailwind CSS.
-  In this case, it's for the fade-in animation on page load.
-*/
+/* style.css */
 
-/* Simple animations and custom styles */
+/* Fade-in animation */
 .fade-in {
     animation: fadeIn 1s ease-in-out;
 }
@@ -17,4 +14,26 @@
         opacity: 1; 
         transform: translateY(0); 
     }
+}
+
+/* Resume Modal Close Button */
+#close-resume-button {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: bold;
+}
+
+/* Custom scrollbar for the resume modal's content area */
+#resume-modal .bg-secondary::-webkit-scrollbar {
+  width: 8px;
+}
+
+#resume-modal .bg-secondary::-webkit-scrollbar-track {
+  background: #1E293B; /* primary color */
+  border-radius: 10px;
+}
+
+#resume-modal .bg-secondary::-webkit-scrollbar-thumb {
+  background-color: #38BDF8; /* accent color */
+  border-radius: 10px;
 }
