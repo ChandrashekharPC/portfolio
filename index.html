@@ -77,14 +77,13 @@
                     </p>
                     <div class="mt-8 flex gap-4">
                         <a href="#contact" class="bg-accent text-primary font-semibold px-6 py-3 rounded-lg hover:bg-sky-400 transition duration-300">Hire Me</a>
-                        <!-- Add your CV link here -->
-                        <a href="#" class="border border-accent text-accent font-semibold px-6 py-3 rounded-lg hover:bg-accent hover:text-primary transition duration-300">Download CV</a>
+                        <!-- Changed to a button to trigger the modal -->
+                        <button id="view-cv-button" class="border border-accent text-accent font-semibold px-6 py-3 rounded-lg hover:bg-accent hover:text-primary transition duration-300">View CV</button>
                     </div>
                 </div>
                 <div class="order-1 md:order-2 flex justify-center">
-    <!-- Corrected image source URL -->
-    <img src="https://raw.githubusercontent.com/ChandrashekharPC/portfolio/main/image/image1.jpg" alt="Chandrashekhar PC" class="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover border-8 border-secondary shadow-2xl">
-</div>
+                    <img src="https://raw.githubusercontent.com/ChandrashekharPC/portfolio/main/image/image1.jpg" alt="Chandrashekhar PC" class="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover border-8 border-secondary shadow-2xl">
+                </div>
             </div>
         </section>
 
@@ -93,7 +92,6 @@
             <h2 class="text-4xl font-bold text-center mb-12">About <span class="text-accent">Me</span></h2>
             <div class="grid md:grid-cols-5 gap-12 items-center">
                 <div class="md:col-span-2">
-                    <!-- Placeholder for another image -->
                      <img src="https://placehold.co/600x600/334155/94A3B8?text=Developer" alt="About me" class="rounded-2xl shadow-lg w-full">
                 </div>
                 <div class="md:col-span-3">
@@ -103,9 +101,9 @@
                     </p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-dark-text">
                         <p><strong class="text-light-text">From:</strong> Shivamogga, Karnataka</p>
-                        <p><strong class="text-light-text">Email:</strong> chandrashekharpc017@gmail.com</p>
+                        <p><strong class="text-light-text">Phone:</strong> +91 9113079175</p>
+                        <p><strong class="text-light-text">Email:</strong> <a href="mailto:chandrashekharpc017@gmail.com" class="hover:text-accent transition">chandrashekharpc017@gmail.com</a></p>
                         <p><strong class="text-light-text">Education:</strong> B.E. CompSci & Design</p>
-                        <p><strong class="text-light-text">Passion:</strong> Problem Solving, UI/UX</p>
                     </div>
                 </div>
             </div>
@@ -115,37 +113,16 @@
         <section id="skills" class="py-20">
             <h2 class="text-4xl font-bold text-center mb-12">My <span class="text-accent">Skills</span></h2>
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-                <!-- Skill items -->
-                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg">
-                    <p class="font-semibold text-lg">C</p>
-                </div>
-                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg">
-                    <p class="font-semibold text-lg">Java</p>
-                </div>
-                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg">
-                    <p class="font-semibold text-lg">JavaScript</p>
-                </div>
-                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg">
-                    <p class="font-semibold text-lg">HTML</p>
-                </div>
-                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg">
-                    <p class="font-semibold text-lg">CSS</p>
-                </div>
-                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg">
-                    <p class="font-semibold text-lg">React.js</p>
-                </div>
-                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg">
-                    <p class="font-semibold text-lg">Tailwind CSS</p>
-                </div>
-                 <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg">
-                    <p class="font-semibold text-lg">MySQL</p>
-                </div>
-                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg">
-                    <p class="font-semibold text-lg">PHP</p>
-                </div>
-                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg">
-                    <p class="font-semibold text-lg">Figma</p>
-                </div>
+                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg"><p class="font-semibold text-lg">C</p></div>
+                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg"><p class="font-semibold text-lg">Java</p></div>
+                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg"><p class="font-semibold text-lg">JavaScript</p></div>
+                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg"><p class="font-semibold text-lg">HTML</p></div>
+                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg"><p class="font-semibold text-lg">CSS</p></div>
+                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg"><p class="font-semibold text-lg">React.js</p></div>
+                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg"><p class="font-semibold text-lg">Tailwind CSS</p></div>
+                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg"><p class="font-semibold text-lg">MySQL</p></div>
+                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg"><p class="font-semibold text-lg">PHP</p></div>
+                <div class="skill-item bg-secondary p-6 rounded-lg text-center hover:-translate-y-2 transition-transform duration-300 shadow-lg"><p class="font-semibold text-lg">Figma</p></div>
             </div>
         </section>
 
@@ -153,25 +130,19 @@
         <section id="projects" class="py-20">
             <h2 class="text-4xl font-bold text-center mb-12">Latest <span class="text-accent">Projects</span></h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
                 <div class="bg-secondary rounded-2xl overflow-hidden group">
-                    <!-- Replace with your project image -->
                     <img src="https://placehold.co/600x400/1E293B/38BDF8?text=Music+App" alt="Music Streaming App" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2">Music Streaming App</h3>
                         <p class="text-dark-text mb-4">A user-centric platform for seamless music discovery and community sharing, built with a responsive frontend and robust backend services.</p>
-                        <!-- Add a link to your project or GitHub repo -->
                         <a href="#" class="text-accent font-semibold hover:underline">View Project →</a>
                     </div>
                 </div>
-                <!-- Project 2 -->
                 <div class="bg-secondary rounded-2xl overflow-hidden group">
-                    <!-- Replace with your project image -->
                     <img src="https://placehold.co/600x400/1E293B/38BDF8?text=Smart+Farming" alt="Smart Farming System" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="p-6">
                         <h3 class="text-2xl font-bold mb-2">IoT Smart Farming System</h3>
                         <p class="text-dark-text mb-4">A web interface for real-time sensor data visualization, system monitoring, and remote control of a smart farming infrastructure.</p>
-                        <!-- Add a link to your project or GitHub repo -->
                         <a href="#" class="text-accent font-semibold hover:underline">View Project →</a>
                     </div>
                 </div>
@@ -188,7 +159,6 @@
                 Say Hello
             </a>
         </section>
-
     </main>
 
     <!-- Footer -->
@@ -196,16 +166,104 @@
         <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <p class="text-dark-text mb-4 md:mb-0">&copy; 2024 Chandrashekhar PC. All rights reserved.</p>
             <div class="flex space-x-6">
-                <!-- Replace '#' with your actual profile links -->
-                <a href="#" aria-label="LinkedIn Profile">
+                <a href="https://www.linkedin.com/in/chandrashekhar-pc-579544266/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                     <svg class="w-6 h-6 text-dark-text hover:text-accent transition" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </a>
-                <a href="#" aria-label="GitHub Profile">
+                <a href="https://github.com/ChandrashekharPC" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                     <svg class="w-6 h-6 text-dark-text hover:text-accent transition" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                 </a>
             </div>
         </div>
     </footer>
+
+    <!-- Resume Modal -->
+    <div id="resume-modal" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden flex justify-center items-center p-4">
+        <div class="bg-secondary w-full max-w-4xl max-h-[90vh] rounded-2xl p-8 relative overflow-y-auto">
+            <button id="close-resume-button" class="absolute top-4 right-4 text-dark-text hover:text-light-text">&times;</button>
+            <div class="resume-content">
+                <!-- Header -->
+                <div class="text-center border-b border-dark-text pb-4 mb-6">
+                    <h1 class="text-4xl font-bold text-accent">Chandrashekhar PC</h1>
+                    <p class="text-lg text-light-text">Shivamogga, Karnataka</p>
+                    <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 mt-2 text-dark-text">
+                        <a href="mailto:chandrashekharpc017@gmail.com" class="hover:text-accent">chandrashekharpc017@gmail.com</a>
+                        <span class="hidden sm:inline">&bull;</span>
+                        <p>+91-9113079175</p>
+                        <span class="hidden sm:inline">&bull;</span>
+                        <a href="https://www.linkedin.com/in/chandrashekhar-pc-579544266/" target="_blank" rel="noopener noreferrer" class="hover:text-accent">LinkedIn</a>
+                        <span class="hidden sm:inline">&bull;</span>
+                        <a href="https://github.com/ChandrashekharPC" target="_blank" rel="noopener noreferrer" class="hover:text-accent">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Summary -->
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold text-accent mb-2">Professional Summary</h2>
+                    <p class="text-dark-text">A highly motivated Computer Science and Design student passionate about building dynamic, responsive web applications. Skilled in full-stack development with practical end-to-end solution experience. Known for disciplined work ethic, strong problem-solving, and commitment to high-quality, scalable software. Eager to adopt new technologies and best practices, complemented by a Graphic Design certification.</p>
+                </div>
+
+                <!-- Education -->
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold text-accent mb-4">Education</h2>
+                    <div class="grid gap-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-light-text">Bachelor of Engineering in Computer Science And design</h3>
+                            <p class="text-dark-text">Alvas Institute Of Engineering And Technology, Mijar, Karnataka (2022-Present)</p>
+                            <p class="text-dark-text">CGPA: 8.0</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-light-text">12th Grade</h3>
+                            <p class="text-dark-text">Sri Adichunchangiri Independent PU College, Shivmogga, Karnataka (2020-2022)</p>
+                            <p class="text-dark-text">Percentage: 90.60%</p>
+                        </div>
+                         <div>
+                            <h3 class="text-xl font-semibold text-light-text">10th Grade</h3>
+                            <p class="text-dark-text">Sri Swami Vivekananda High School, Soraba, Shivmogga, Karnataka (2019-2020)</p>
+                            <p class="text-dark-text">Percentage: 84.56%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold text-accent mb-2">Technical Skills</h2>
+                     <ul class="list-disc list-inside text-dark-text grid sm:grid-cols-2 gap-x-6">
+                        <li><strong class="text-light-text">Languages:</strong> C, JavaScript, Java, Problem Solving</li>
+                        <li><strong class="text-light-text">Web Development:</strong> HTML, CSS, React.js, Tailwind CSS</li>
+                        <li><strong class="text-light-text">UI / UX:</strong> Figma, Canva</li>
+                    </ul>
+                </div>
+                
+                <!-- Projects -->
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold text-accent mb-4">Projects</h2>
+                     <div class="grid gap-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-light-text">A Music Streaming App</h3>
+                            <p class="text-dark-text">Utilized HTML, CSS, and JavaScript for a responsive and intuitive frontend, and MySQL with server-side scripting for robust backend services, creating a user-centric platform focused on seamless music discovery and community sharing.</p>
+                            <p class="text-sm text-accent mt-1">Tech: HTML, CSS, JavaScript, MySQL, PHP</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-light-text">IOT-Enabled Distributed Smart Farming System</h3>
+                            <p class="text-dark-text">Features a comprehensive web-based interface (HTML, CSS, JavaScript) for real-time sensor data visualization, system activity monitoring, secure user login, and advanced remote control of the entire smart farming infrastructure.</p>
+                             <p class="text-sm text-accent mt-1">Tech: HTML, CSS, JavaScript, MySQL, PHP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div>
+                    <h2 class="text-2xl font-bold text-accent mb-2">Achievements & Certifications</h2>
+                    <ul class="list-disc list-inside text-dark-text space-y-2">
+                        <li><strong>Certifications:</strong> Certified in Cloud Computing and Introduction to Graphic Design by NPTEL, and completed courses in Data Structures in C and Analysis and Design Algorithms from CodeChef.</li>
+                        <li><strong>Research Publication:</strong> Published a research paper on "AI Rendering Creativity and Animation Evaluation," exploring advancements in Al's role in creative rendering and animation assessment (ISSN: 2349-5162).</li>
+                        <li><strong>Problem Solving:</strong> Solved 180+ problems on platforms like LeetCode, HackerRank, and CodeChef; proficient in Data Structures and Algorithms.</li>
+                        <li><strong>Extracurricular:</strong> Represented the college in Zonal Kabaddi, fostering teamwork, and organized a computer literacy program for primary students.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
